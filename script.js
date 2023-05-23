@@ -1,10 +1,6 @@
-
-
 const buttonElement = document.querySelector('button');
 
-
 buttonElement.addEventListener('click', function(){
-
 
     function createElement(tagName, className){
 
@@ -15,7 +11,7 @@ buttonElement.addEventListener('click', function(){
     };
 
 
-const gridElement = document.querySelector('.grid');
+const gridElement = document.getElementById('grid');
 
 for (let index = 1; index <= 100; index++) {
 
@@ -26,6 +22,8 @@ for (let index = 1; index <= 100; index++) {
     actualCell.addEventListener('click', function(){
 
         actualCell.classList.toggle('selected');
+
+        console.log(index);
 
     });
 
