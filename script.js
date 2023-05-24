@@ -1,5 +1,9 @@
 const buttonElement = document.querySelector('button');
 
+const gridElement = document.getElementById('grid');
+
+gridElement.innerHTML = "";
+
 buttonElement.addEventListener('click', function(){
 
     function createElement(tagName, className){
@@ -9,9 +13,6 @@ buttonElement.addEventListener('click', function(){
             return cellElement
 
     };
-
-
-const gridElement = document.getElementById('grid');
 
 for (let index = 1; index <= 100; index++) {
 
